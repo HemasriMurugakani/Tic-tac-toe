@@ -1,0 +1,90 @@
+body {
+  background-image: url('https://wallpapercave.com/wp/wp8984736.jpg'); /* Add your image path */
+  background-size: auto;
+  background-color: antiquewhite;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  text-align: center;
+  color: #0b0b0b;
+  text-shadow: 2px 2px 4px rgba(250, 3, 3, 0.5);
+}
+
+#board {
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to bottom, #f7f4f4, #d4c8b1);
+}
+
+.cell {
+  width: 120px;
+  height: 120px;
+  border: 1px solid;
+  line-height: 120px;
+  text-align: center;
+  float: left;
+  font-size: 2em;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cell:hover {
+  background-color: #f6f0f0;
+  transform: scale(1.1);
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#turn, #points, #winner {
+  font-size: 2em;
+  text-align: center;
+  color:;
+  margin: 10px;
+  font-variant: small-caps;
+  font-style: italic;
+  font-stretch: extra-expanded;
+  font-weight: bolder;
+  text-shadow: 2px 2px 4px rgba(250, 3, 3, 0.5);
+}
+
+button {
+    position: absolute;
+    top: 25%;
+    left: 63%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    padding: 10px;
+    background-color: #fffeff; /* Your preferred color */
+    color: rgb(8, 8, 8);
+    font-family: cursive;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px auto; /* Added margin for spacing */
+}
+
+button:hover {
+    background-color: #8a725c; /* Darker color on hover */
+}
+
+@media (max-width: 600px) {
+  #board {
+      /* Adjust styles for smaller screens */
+  }
+}
+
+
+  
